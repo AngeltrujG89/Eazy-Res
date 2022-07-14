@@ -100,6 +100,8 @@ nav > .navheader{
 }
 
 .span-validate{
+    display: flex;
     font-size: 10px;
     text-align: center;
+    justify-content: center;
 }

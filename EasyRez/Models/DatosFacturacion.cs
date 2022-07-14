@@ -6,24 +6,24 @@ namespace EasyRez.Models
     {
         
         public int IdDatoFacturacion { get; set; }
-        [Range(1, int.MaxValue, ErrorMessage = "Requerido.")]
+        [Range(1, int.MaxValue, ErrorMessage = "Debes de seleccionar una opcion.")]
         public int TipoPersona { get; set; }
 
-        [Required(ErrorMessage = "Requerido.")]
+        [Required(ErrorMessage = "Campo RFC es requerido."), MaxLength(13)]
         public string? RFC { get; set; }
-        [Required(ErrorMessage = "Requerido."), MaxLength(13)]
+        [Required(ErrorMessage = "El campo razon social es requerido."), MaxLength(250, ErrorMessage ="Se supero el maximo de caracteres permitidos")]
         public string? RazonSocial { get; set; }
-        [Required(ErrorMessage = "El campo razón socioal es requerido."), MaxLength(250, ErrorMessage ="Se superó el maximo de caracteres permitidos")]
+        [Required(ErrorMessage = "Campo correo es requerido."), MaxLength(80, ErrorMessage ="Se superó el maximo de caracteres permitidos")]
         public string? Correo { get; set; }
         public int MetodoPago { get; set; }
-        [Range(1, int.MaxValue, ErrorMessage = "Requerido.")]
+        [Range(1, int.MaxValue, ErrorMessage = "Debes de seleccionar una opcion.")]
 
         public int UsoCFDI { get; set; }
-        [Range(1, int.MaxValue, ErrorMessage = "Requerido.")]
+        [Range(1, int.MaxValue, ErrorMessage = "Debes de seleccionar una opcion.")]
         public int RegimenFiscal { get; set; }
         public int IdDireccion { get; set; }
         public bool EsSucursal { get; set; }
-        [Range(1, int.MaxValue, ErrorMessage = "Requerido.")]
+        [Range(1, int.MaxValue, ErrorMessage = "Debes de seleccionar una opcion.")]
         public int TipoEntidadTributaria { get; set; }
         public int IdEntidadTributaria { get; set; }
 

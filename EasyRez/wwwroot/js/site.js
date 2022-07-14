@@ -49,10 +49,12 @@ function validarEntrada(input) {
 
     if (rfcCorrecto) {
         rfcInput.classList.remove("input-validate-red")
+        rfcInput.classList.remove("span-validate")
         valido = "valido";
         rfcInput.classList.add("input-validate-green")
     }
     else {
+        rfcInput.classList.remove("span-validate")
         console.log("RFC no valido");
         valido = "no valido"
         rfcInput.classList.add("input-validate-red")
