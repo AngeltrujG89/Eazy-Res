@@ -1,0 +1,105 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #495464;
+}
+
+nav {
+    height: 50%;
+    width: 100%;
+    background-color: #DC2F2F;
+
+}
+
+nav > .navheader{
+   display: inline;
+}
+
+.contenedor {
+    width: 60;
+    background: #F7F7F7;
+    border: solid #BDBDBD 0;
+    box-shadow: 7px -4px 17px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 7px -4px 17px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 7px -4px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-left : 10px;
+    padding-right : 10px;
+    color: #495464;
+    width: 80%;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.input-text{
+    display: block;
+    color: inherit;
+    width: 100%;
+    font-size: inherit;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.4rem;
+    position: relative;
+}
+    .input-text:focus {
+        outline: none;
+        box-shadow: 0.2rem 0.8rem 1.6rem var(#1A3263);
+    }
+
+.select-text {
+    display: block;
+    color: inherit;
+    width: 100%;
+    font-size: inherit;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.4rem;
+    position: relative;
+}
+
+.select-text:focus {
+    outline: none;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(#1A3263);
+}
+
+
+.btnBar {
+    background-color: #E8E8E8;
+    height: 50px !important;
+    bottom: 10px;
+}
+
+
+.footer {
+    background-color: #6A7EFC;
+    color: #E8E8E8 !important;
+    text-align:center;
+}
+
+.input-validate-green {
+    border-color: #3EC70B;
+}
+
+.input-validate-red{
+    border-color: #dc3545;
+}
+
+.span-validate{
+    font-size: 10px;
+    text-align: center;
+}
